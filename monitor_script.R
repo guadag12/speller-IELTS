@@ -70,6 +70,5 @@ lapply(speakers, function(x) tts_ITRI(content, speaker = x,
 
 library(text2speech)
 library(googleLanguageR)
-tts_auth("google", key_or_json_file = "sonorous-antler-318800-28a12c8221e8.json")
 gl_talk("Would you like a cup of tea?", gender = "FEMALE", languageCode = "en-GB")
 gl_talk("This is my audio player") %>% gl_talk_player(html = paste0("file:///D:/Guada/TOEFL%202021/dictator/dictator/", player, ".html"))
